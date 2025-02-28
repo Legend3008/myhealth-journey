@@ -10,7 +10,8 @@ import {
   User, 
   Heart, 
   Shield,
-  AlertCircle 
+  AlertCircle,
+  LucideProps 
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -240,7 +241,7 @@ export default function Auth() {
 }
 
 interface FeatureCardProps {
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: React.ComponentType<LucideProps>;
   title: string;
   description: string;
 }

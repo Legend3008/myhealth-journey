@@ -13,7 +13,8 @@ import {
   ArrowRight,
   BarChart3,
   Scale,
-  Clock
+  Clock,
+  LucideProps
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -318,7 +319,7 @@ interface HealthStatProps {
   title: string;
   value: string;
   unit: string;
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: React.ComponentType<LucideProps>;
   trend: 'up' | 'down' | 'normal';
   trendValue?: string;
   color?: string;
@@ -432,7 +433,7 @@ interface MetricCardProps {
   unit: string;
   change: string;
   trend: 'up' | 'down' | 'normal';
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: React.ComponentType<LucideProps>;
 }
 
 function MetricCard({ title, value, unit, change, trend, icon: Icon }: MetricCardProps) {
@@ -510,7 +511,7 @@ function MetricCard({ title, value, unit, change, trend, icon: Icon }: MetricCar
 }
 
 interface ActionButtonProps {
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: React.ComponentType<LucideProps>;
   label: string;
 }
 

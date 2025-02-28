@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Camera, Edit, Mail, Phone, User, MapPin, Calendar, Save, Plus } from 'lucide-react';
+import { Camera, Edit, Mail, Phone, User, MapPin, Calendar, Save, Plus, LucideProps } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { Switch } from '@/components/ui/switch';
 import { cn } from '@/lib/utils';
@@ -460,7 +460,7 @@ export default function Profile() {
 }
 
 interface ContactInfoProps {
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: React.ComponentType<LucideProps>;
   label: string;
   value: string;
 }
