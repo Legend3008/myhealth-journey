@@ -10,6 +10,13 @@ import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import Appointments from "./pages/Appointments";
+import Medications from "./pages/Medications";
+import Records from "./pages/Records";
+import Vitals from "./pages/Vitals";
+import Messages from "./pages/Messages";
+import History from "./pages/History";
+import Resources from "./pages/Resources";
 
 const queryClient = new QueryClient();
 
@@ -24,14 +31,13 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/profile" element={<Profile />} />
-            {/* These routes will be implemented in the future */}
-            <Route path="/appointments" element={<NotFound />} />
-            <Route path="/medications" element={<NotFound />} />
-            <Route path="/records" element={<NotFound />} />
-            <Route path="/vitals" element={<NotFound />} />
-            <Route path="/messages" element={<NotFound />} />
-            <Route path="/history" element={<NotFound />} />
-            <Route path="/resources" element={<NotFound />} />
+            <Route path="/appointments" element={<Appointments />} />
+            <Route path="/medications" element={<Medications />} />
+            <Route path="/records" element={<Records />} />
+            <Route path="/vitals" element={<Vitals />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/history" element={<History />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/settings" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
