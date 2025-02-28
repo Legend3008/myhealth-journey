@@ -17,6 +17,7 @@ import Vitals from "./pages/Vitals";
 import Messages from "./pages/Messages";
 import History from "./pages/History";
 import Resources from "./pages/Resources";
+import SettingsPage from "./pages/Settings";
 
 const queryClient = new QueryClient();
 
@@ -38,7 +39,7 @@ const App = () => (
             <Route path="/messages" element={<Messages />} />
             <Route path="/history" element={<History />} />
             <Route path="/resources" element={<Resources />} />
-            <Route path="/settings" element={<NotFound />} />
+            <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
